@@ -1,0 +1,202 @@
+.header{
+    background-color: #232323;
+    padding: 12px 0 8px 0;
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mob-burger__btn{
+    display: none;
+}
+.logo-container{
+   
+    display: inline-block;
+    width: 17%;
+    height: 32px;
+    background-image: url('../../images/logo_white_and_color\ 1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.input-container{
+    position: relative;
+    width: 60%;
+    height: 40px;
+}
+.search-input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+}
+.search__btn{
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url('../../images/search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+.autorize-block{
+    display: flex;
+    align-items: center;
+}
+.account{
+    display: flex;
+    position: relative;
+    margin-right: 18px;
+}
+.account__img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background-image: url('../../images/account.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.account__count,
+.notification__count{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ED3434;
+    border-radius: 50%;
+}
+.account__count{
+    position: absolute;
+    bottom: 0;
+    left: 9px;
+}
+.account__text{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+.notification{
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    background-image: url('../../images/ring.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.notification__count{
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+.mob-nav{
+    display: none;
+}
+.nav{
+    background-color: #414141;
+    width: 100%;
+}
+.nav-link{
+font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+color: #FFFFFF;
+text-decoration: none;
+display: inline-block;
+padding: 18px 12px;
+transition: all 200ms linear;
+}
+.nav-link:first-child{
+    padding-left: 6px;
+}
+
+.nav-link:hover{
+    transition: all 200ms linear;
+    background-color: #ED3434;
+}
+.subscribe-btn{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 7px 119px 6px 89px;
+    background-color: #ED3434;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 1200px) {
+   .subscribe-btn{
+        padding: 7px 30px 6px 30px
+    } 
+}
+@media (max-width: 985px) {
+    .notification{
+        display: none;
+    }
+}
+@media (max-width: 415px) {
+    .logo-container{
+        width: 47%;
+    }
+    .account__text,
+    .input-container{
+        display: none;
+    }
+    .mob-burger__btn{
+        display: block;
+        width: 18px;
+        height: 20px;
+    }
+    .mob-burger__btn button{
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        background-image: url('../../images/list.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .mob-nav{
+        position: absolute;
+        z-index: 1;
+        top: 13%;
+        left: 0;
+        width: 310px;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #ED3434;
+    }
+    .mob-nav-link{
+        font-weight: 300;
+font-size: 16px;
+line-height: 150%;
+color: #FFFFFF;
+text-decoration: none;
+display: inline-block;
+padding: 18px 12px;
+    }
+
+    
+}

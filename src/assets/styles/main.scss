@@ -1,0 +1,53 @@
+@import './_mixins.scss';
+@import './variables.scss';
+@import './header.scss';
+@import './video-section.scss';
+@import './video-content.scss';
+@import './filter.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+}
+.main-container{
+    padding: 0 10.4% 0 10.4%;
+}
+.section{
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-bottom: 92px;
+}
+
+.section-title{
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #3F3F3F;
+    padding: 19px 0 9px 0;
+}
+._active{
+    background-color: #ED3434;
+}
+
+.slide-fade-enter-active {
+    transition: all .3s linear;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to{
+    transform: translateY(10px);
+    opacity: 0;
+  }

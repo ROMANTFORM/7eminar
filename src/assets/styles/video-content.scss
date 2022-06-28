@@ -1,0 +1,12 @@
+.video-content__container{
+    display: flex;
+    justify-content: space-between;
+}
+.video-tile{
+    width: 59%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 39px;
+    margin-top: 26px;
+    margin-bottom: 69px;
+}
