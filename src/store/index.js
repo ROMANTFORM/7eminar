@@ -29,7 +29,7 @@ export default new Vuex.Store({
   },
   actions: {
   async GET_DATA_FROM_API(ctx){
-   const res = await fetch(`http://localhost:3000/data?_page=1&_limit=${this.state.limit}`);
+   const res = await fetch(`http://https://my-json-server.typicode.com/ROMANTFORM/7eminar/data?_page=1&_limit=${this.state.limit}`);
    const data = await res.json();
    ctx.commit('SET_DATA', data);
    },
