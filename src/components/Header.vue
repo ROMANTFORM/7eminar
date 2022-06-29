@@ -92,5 +92,5 @@ export default{
 </script>
 
 <style>
-@import url('../assets/styles/main.scss');
+
 </style>
